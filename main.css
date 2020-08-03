@@ -1,0 +1,145 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://srgi.ac.in/wp-content/uploads/2020/04/Slidemain3.jpg') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+.overview {
+    margin: 50px;
+    display: block;
+}
+.overview h3 {
+    text-align: center;
+}
+.panel {
+    padding: 15px;
+}
+.heading {
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+.breadcrumb a{
+    color: black;
+}
+.content {
+    padding: 15px;
+    margin: auto;
+}
+.container1 {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: lightskyblue;
+}
+.dept {
+    border-radius: 50px;
+    margin: 5px;
+    padding-bottom: 15px;
+}
+
+#Faculties {
+    background-color: silver;
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+.radii a {
+    color: aliceblue;
+}
+
+.radii {
+    
+    border-radius: 75px;
+    background-color: black;
+}
+
+.row {
+    display: block;
+}
+.card {
+    display: block;
+    margin: 25px;
+    padding: 25px;
+}
+
+
